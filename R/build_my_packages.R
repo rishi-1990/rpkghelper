@@ -3,6 +3,7 @@
 #' @importFrom utils install.packages
 #'
 #' @param ... package names as characters
+#' @param package_path paackage path
 #'
 #' @export
 build_my_packages = function(..., package_path = PKG_PATH){
@@ -15,6 +16,14 @@ build_my_packages = function(..., package_path = PKG_PATH){
 
 PKG_PATH = "C:/Users/postgres/Documents/git/"
 
+
+#' Set PKG_PATH used for build_my_packages func.
+#'
+#' @importFrom utils install.packages
+#'
+#' @param ... package names as characters
+#'
+#' @export
 set_package_path = function(path){
   PKG_PATH = path
 }
