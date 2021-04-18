@@ -5,7 +5,7 @@
 #' @param ... package names as characters
 #'
 #' @export
-build_my_packages = function(package_path = PKG_PATH, ...){
+build_my_packages = function(..., package_path = PKG_PATH){
   lib_vec = c(...)
   for (lib in lib_vec) {
     path = paste(package_path, lib, sep = "")

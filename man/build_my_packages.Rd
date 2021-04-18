@@ -4,7 +4,7 @@
 \alias{build_my_packages}
 \title{Build my packages}
 \usage{
-build_my_packages(package_path, ...)
+build_my_packages(..., package_path = PKG_PATH)
 }
 \arguments{
 \item{...}{package names as characters}
