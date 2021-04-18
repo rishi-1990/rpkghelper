@@ -5,7 +5,7 @@
 #' @param ... package names as characters
 #'
 #' @export
-build_my_packages = function(package_path, ...){
+build_my_packages = function(package_path = PKG_PATH, ...){
   lib_vec = c(...)
   for (lib in lib_vec) {
     path = paste(package_path, lib, sep = "")
@@ -13,3 +13,8 @@ build_my_packages = function(package_path, ...){
   }
 }
 
+PKG_PATH = "C:/Users/postgres/Documents/git/"
+
+set_package_path = function(path){
+  PKG_PATH = path
+}
